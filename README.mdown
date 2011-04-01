@@ -1,0 +1,9 @@
+# Growl
+
+Growl notification plugin for pidgin.
+
+Everytime someone messages you, there's a growl notification. It's not very configurable yet.
+
+## requirements
+
+ * growlnotify - http://growl.info/extras.php#growlnotify
