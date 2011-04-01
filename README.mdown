@@ -1,9 +1,25 @@
+For a list of more pidgin plugins see their plugins listing page at [http://developer.pidgin.im/wiki/ThirdPartyPlugins](http://developer.pidgin.im/wiki/ThirdPartyPlugins)
+
 # Growl
 
 Growl notification plugin for pidgin.
 
-Everytime someone messages you, there's a growl notification. It's not very configurable yet.
+Everytime someone messages you, there's a growl notification. It's not very
+configurable yet.
 
 ## requirements
 
  * [growlnotify](http://growl.info/extras.php#growlnotify)
+
+
+# URL Shortener
+
+Perl plugin to shorten long urls. Especially useful for finch. Download and put
+in plugins directory. URLs are shortened as they come in if they exceed maximum
+length setting. no action required. Requires some perl libraries to work.
+
+## requirements
+
+* LWP::Simple
+* XML::Simple
+* Regexp::Common
