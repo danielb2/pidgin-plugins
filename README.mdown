@@ -6,4 +6,4 @@ Everytime someone messages you, there's a growl notification. It's not very conf
 
 ## requirements
 
- * growlnotify - http://growl.info/extras.php#growlnotify
+ * [growlnotify](http://growl.info/extras.php#growlnotify)
