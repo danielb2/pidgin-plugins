@@ -6,7 +6,7 @@ use Regexp::Common qw /URI/;
 %PLUGIN_INFO = (
     perl_api_version => 2,
     name => "URL shorten",
-    version => "0.9b3",
+    version => "0.9.4",
     summary => "Shortens urls.",
     description => "Shortens urls. BETA: report bugs please.  support\@pidgin.im",
     author => "daniel\@netwalk.org",
