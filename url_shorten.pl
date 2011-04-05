@@ -37,7 +37,7 @@ sub receiving_im_msg_cb {
     my $accountname = $account->get_username();
     Purple::Debug::info("url_shorten", Dumper $account->get_protocol_id() );
     Purple::Debug::info("url_shorten", Dumper $msg);
-    next unless $msg =~ m|https?://|;
+    return unless $msg =~ m|https?://|;
     $msg = "<msg>$msg</msg>";
     my @urls = find_urls( $msg, $account->get_protocol_id() );
     Purple::Debug::info("url_shorten", Dumper \@_);
