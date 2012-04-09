@@ -35,11 +35,13 @@ sub receiving_im_msg_cb {
     Purple::Debug::info("growl", '================================================');
     Purple::Debug::info("growl", Dumper $account->get_protocol_id() );
     $msg =~ s/<[^>]+>//g;
+    $msg =~ s/"/''/g;
     next if $msg =~ /\?OTR/;
     Purple::Debug::info("growl", Dumper $msg);
     my $buddy = Purple::Find::buddy($account, $who);
     $display_name = $buddy->get_alias() ||  $buddy->get_name();
-    system("growlnotify -t '$display_name ($who)' -m '$msg'");
+    $display_name =~ s/"/''/g;
+    system("growlnotify -t \"$display_name ($who)\" -m \"$msg\"");
     $_[2];
 }
 
